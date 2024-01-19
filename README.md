@@ -16,6 +16,12 @@ Aprendemos que o método map executa uma função para cada elemento do array e 
 
 Aplicamos um desconto através do método map nos preços de cada livro do nosso projeto e entendemos a diferença entre os métodos forEach e map.
 
+Realizamos testes na documentação oficial do JavaScript para entender como o método filter funciona;
+
+Atribuímos um evento de click no botão para filtrar os livros por categoria através do filter;
+
+Exibimos os livros filtrados por categoria e que estejam disponíveis.
+
 
 
 ## 1 - Preparando o Ambiente
@@ -64,6 +70,27 @@ console.log(livro);
 Gera um novo array sem alterar o original.
 
 ## 4 - Filter: aplicando diferentes filtros
+
+### Filter 
+
+Temos um array e queremos filtrar criando um novo array.
+
+### Como funciona o método Filter
+
+### Filter de Livros
+
+![image](https://github.com/FlavianaFXT/Alura-Books/assets/113718720/1f1269fd-8a04-4f2a-8de7-78f7317f1a0d)
+
+
+### Livros Filtrados na Tela
+
+
+## 5 - Sort: Ordenando a Lista
+
+
+
+
+
 
 
 
