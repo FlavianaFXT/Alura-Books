@@ -6,6 +6,7 @@ function filtrarLivros(){
     const eletoBtn = document.getElementById(this.id);
     const categoria = eletoBtn.value;
     let livrosFiltrados = livros.filter(livro => livro.categoria == categoria);
+    
     exibirOsLIvrosNaTela(livrosFiltrados);
 }
 
