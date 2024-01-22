@@ -1,0 +1,3 @@
+function calculaValorTotalLivrosDisponiveis(livro){
+    return filtrarLivros.reduce((acc,livro) => acc + livro.preco, 0).toFixed(2)
+}

@@ -6,6 +6,9 @@ function filtrarLivros(){
     const eletoBtn = document.getElementById(this.id);
     const categoria = eletoBtn.value;
     let livrosFiltrados = categoria == 'disponivel' ? livros.filter(livro => livro.quantidade> 0) : livros.filter(livro => livro.categoria == categoria);
+    const valorTotal = calculaValorTotalLivrosDisponiveis(livrosFiltrados)
+
+    console.log(valorTotal)
     
     exibirOsLIvrosNaTela(livrosFiltrados);
 }
