@@ -5,6 +5,12 @@ function exibirOsLIvrosNaTela(listaDeLivros){
     elementoParaInserirLivros.innerHTML += ''
     
     listaDeLivros.forEach(livro => {
+
+        // let disponibilidade = verificarDisponibilidadeDoLivro(livro)
+        //OU OPERADOR TERNARIO:
+
+        let disponibilidade = livro.quantidade > 0 ? 'livro_imagens' : 'livro_imagens indisponivel'
+
         elementoParaInserirLivros.innerHTML += `
         <div class="livro">
             <img class="livro__imagens" src="${livro.imagem}" alt="${livro.alt}" />
@@ -20,4 +26,12 @@ function exibirOsLIvrosNaTela(listaDeLivros){
         `
     });
 };
+
+// function verificarDisponibilidadeDoLivro(livro){
+//     if(livro.quantidade > 0){
+//         return 'livro_imagens'
+//     }else{
+//         return 'livro_imagens indisponivel'
+//     }
+// }
 
